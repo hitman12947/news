@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block content %}
+
+    <h2 class="text-center mt-3 mb-3">Welcome to scrapped news site</h2>
+
+    {% for i in range(counter) %}
+        <h6><a class="text-success" href="https://www.bbc.com{{ link[i] }}" target="_blank">{{ link_text[i] }}</a></h6>
+    {% endfor %}
+
+{% endblock %}
